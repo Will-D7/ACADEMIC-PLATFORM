@@ -1,26 +1,34 @@
 
 <div class="col-md-6 offset-md-3">
-    <div class="card">
-        <div class="card-header">
-            <h1>SIS INFO 2</h1>
-    </div>
-    <div class="card-footer-curso">
-        <div class="card-curso">
-            <a href="#curso">Avisos</a>
-            <a href="#trabajos">Trabajos</a>
-            <a href="#calendario">Calendario</a>
-        </div>
-        
-    </div>
+    <!-- Aqui optimizamos el encabezado de menu-->
     <div class="center-button">
-        <button class="crear-tarea" id="show-form" ><a href="newTask">Crear Tarea</a></button>
+        <button class="crear-tarea" id="show-form" >Crear Tarea</button>
     </div>
     <div class="hide-form" id="formm">
-        <form>
+        <form enctype="multipart/form-data">
             <p>Nombre de la tarea nueva</p>
             <input type="text" name="tituloTarea" placeholder="Titulo tarea" class="form-control" autofocus>
-            <input type="text" name="descripcionTarea" placeholder="Descripción" class="formcontrol" >
+            <p>Añada una descripcion de la tarea</p>
+            <textarea id="desc" name="desc" placeholder="De una descripcion breve de la tarea"></textarea>
+            <p></p>
+            <label for="adjunto">Adjuntar archivo:</label>
+            <input type="file" id="adjunto" name="adjunto">
+            <p></p>
+            <label for="deadline">Fecha limite de entrega:</label>
+            <input type="date" id="deadline" name="deadline">
+            <p></p>
+            <label for="topics">Asignar a tema</label>
+            <select name="topics" id="topics-scroll">
+                <option value="SIS INFO 2">SIS INFO 2</option>
+            </select>
+            <P></P>
+            <label for="score">Puntuación de la tarea:</label>
+            <input type="number" id="score-task" name="score" placeholder="Puntuación" autofocus>
+            
         </form>
+        <button class="crear-tarea" id="send-button"> Publicar tarea</button>
+        <p></p>
+        <!-- <button type="submit">Publicar Tarea</button> -->
     </div>
 </div>
 

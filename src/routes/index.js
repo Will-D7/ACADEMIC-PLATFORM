@@ -15,8 +15,8 @@ router.get('/register',(req,res) =>{
 router.get('/curso',(req,res) =>{
     res.render('curso');
 });
-router.get('/newTask',(req,res) =>{
-    res.render('newTask');
+router.get('/tasks',(req,res) =>{
+    res.render('tasks');
 })
 
 module.exports = router;

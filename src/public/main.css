@@ -139,4 +139,24 @@
     display: none;
 }
 
+#formm {
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+#formm form {
+    text-align: left; /* Restaura el texto del formulario alineado a la izquierda */
+}
+
+#formm textarea {
+    width: 100%; /* Ocupa todo el ancho disponible del contenedor */
+    box-sizing: border-box; /* Asegura que el ancho incluye el relleno y el borde */
+    height: 200% !important;
+}
+#score-task{
+    width: 25%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1 px solid #ccc;
+    border-radius: 5px;
+}
 
