@@ -1,0 +1,175 @@
+.image-background{
+    width: 100%;
+    height: 400px; /* Establece la altura deseada */
+    background-image: url('644885.jpg'); /* Ruta de tu imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el div */
+    background-position: center; /* Centra la imagen en el div */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+
+}
+#contenedor{
+    width: 85%;
+    height: 100vh;
+    background-color: rgb(235, 241, 241);
+    margin: auto;
+    padding: 5em;
+
+}
+#header{
+    background-color:blue;
+/*    margin: 1em;*/
+    height: 15%;
+    width: 100%;
+    border-radius: 1em;
+    font-size: x-large;
+    font-weight: 3000;
+    font-style: oblique;
+    text-align: center;
+    
+    
+    
+}
+#nav{
+    background-color:rgb(0, 225, 255);
+    margin: 1em;
+    height: 10%;
+    border-radius: 1em;
+    
+    
+}
+#contenido{
+    background-color:rgb(211, 227, 228);
+    margin: 1em;
+    height: 90%;
+    width: 100%;
+    border-radius: 1em;
+    padding: 1em;
+    
+    
+}
+#seccion{
+    background-color:blue;
+    margin: 1em;
+    height: 90%;
+    width: 65%;
+    border-radius: 1em;
+    float: right;
+    
+    
+}
+#tareas{
+    background-color:rgb(0, 153, 255);
+    margin: 1em;
+    height: 10%;
+    font-style: oblique;
+    text-align: center;
+    border-radius: 1em;    
+}
+#secciontareas{
+    background-color:rgb(0, 153, 255);
+    margin: 1em;
+    height: 80%;
+    border-radius: 1em;    
+}
+#tarea1{
+    padding: 1em;
+    background-color:rgb(211, 227, 228);
+    margin: 1em;
+    height: 20%;
+    border-radius: 1em;       
+}
+.ver{
+    
+    background-color:rgb(240, 245, 245);
+    margin: 1em;
+    height: 5%;
+    border-radius: 1em; 
+    color: black;  
+    float: right;   
+}
+.ver2{
+    
+    background-color:rgb(240, 245, 245);
+    margin: 1em;
+    height: 5%;
+    border-radius: 1em; 
+    color: black;  
+    float: right;   
+}
+.ver3{
+    
+    background-color:rgb(240, 245, 245);
+    margin: 1em;
+    height: 5%;
+    border-radius: 1em; 
+    color: black;  
+    float: right;   
+}
+#tarea2{
+    padding: 1em;
+    background-color:rgb(211, 227, 228);
+    margin: 1em;
+    height: 20%;
+    border-radius: 1em;   
+}
+#tarea3{
+    padding: 1em;
+    background-color:rgb(211, 227, 228);
+    margin: 1em;
+    height: 20%;
+    border-radius: 1em;   
+    
+}
+
+#temas{
+    background-color:rgb(0, 153, 255);
+    margin: 1em;
+    height: 80%;
+    font-style: oblique;
+    text-align: center;
+    border-radius: 1em;    
+}
+.tema1{
+    font-style: oblique;
+    text-align: center;
+    font-size: larger;
+    color: #fdfdfd;
+}
+.tema2{
+    font-style: oblique;
+    text-align: center;
+    font-size: larger;
+    color: #fdfdfd;
+}
+.tema3{
+    font-style: oblique;
+    text-align: center;
+    font-size: larger;
+    color: #fdfdfd;
+}
+.tema4{
+    font-style: oblique;
+    text-align: center;
+    font-size: larger;
+    color: #fdfdfd;
+}
+
+
+#aside{
+    background-color:blue;
+    margin: 1em;
+    height: 90%;
+    width: 25%;
+    border-radius: 1em;
+   float: left;
+    
+    
+}
+#secciontemas{
+    background-color:rgb(0, 153, 255);
+    margin: 1em;
+    height: 10%;
+    font-style: oblique;
+    text-align: center;
+    border-radius: 1em;    
+}
