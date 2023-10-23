@@ -2,6 +2,13 @@ const { Router } = require('express');
 const router = Router();
 const admin = require('firebase-admin');
 
+var serviceAccount = require("../../task-acadplat-firebase-adminsdk-mbvq9-d0007c0c20.json");//key para conectar a firebase
+
+admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount),
+    databaseURL: 'https://task-acadplat-default-rtdb.firebaseio.com/'
+});
+router.post('/new-task');
 
 router.get('/',(req,res) =>{
     res.render('index');
