@@ -1,0 +1,187 @@
+/* styles.css */
+
+.card-header{
+    text-align: center; /* Alinea horizontalmente en el centro */
+    display: flex;
+    justify-content: center; /* Alinea horizontalmente en el centro */
+    align-items: center; /* Alinea verticalmente en el centro */
+    height: 100px; /* Ajusta la altura según tus necesidades */
+}
+
+.image-background{
+    width: 100%;
+    height: 400px; /* Establece la altura deseada */
+    background-image: url('644885.jpg'); /* Ruta de tu imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el div */
+    background-position: center; /* Centra la imagen en el div */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+
+}
+
+/* Estilos para la barra horizontal */
+.navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center;
+    padding: 10px;
+}
+
+/* Estilos para los elementos de menú desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Estilos para el botón del menú desplegable */
+.dropbtn {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos para el contenido del menú desplegable de "Opción 1" (derecha) */
+.cursos-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+    left: 0;
+}
+
+/* Estilos para el contenido del menú desplegable de "Usuario" (izquierda) */
+.usuario-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+    right: 0;
+}
+
+/* Estilos para los enlaces en los menús desplegables */
+.dropdown-content a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Cambia el color del enlace cuando el cursor está sobre él */
+.dropdown-content a:hover {
+    background-color: #444;
+}
+
+/* Muestra el menú desplegable al pasar el cursor sobre el botón */
+.dropdown:hover .cursos-content {
+    display: block;
+}
+
+/* Muestra el menú desplegable al pasar el cursor sobre el botón */
+.dropdown:hover .usuario-content {
+    display: block;
+}
+
+/* Estilos para el nombre de usuario */
+.user-name {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* curso.hbs */
+
+.center-button{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.crear-tarea {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.crear-tarea:hover {
+    background-color: #0056b3;
+    
+}
+
+
+/*curso.hbs*/
+
+.card-curso {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: flex-end; /* Alinea los elementos en la parte inferior */
+}
+
+.card-curso a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    margin: 0 10px; /* Añade espaciado entre los enlaces */
+    padding: 5px; /* Agrega un relleno alrededor de los enlaces */
+    border-bottom: 2px solid transparent; /* Línea inferior inicialmente transparente */
+    color: #e6e6e6; /* Color del texto */
+    transition: border-color 0.2s; /* Transición para el color de la línea inferior */
+}
+
+.card-curso a:hover {
+    border-color: #e6e6e6; /* Color de la línea inferior cuando se pasa el cursor sobre el enlace */
+}
+
+/*formu curso*/
+.hide-form{
+    display: none;
+}
+
+#formm {
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+#formm form {
+    text-align: left; /* Restaura el texto del formulario alineado a la izquierda */
+}
+
+#formm textarea {
+    width: 100%; /* Ocupa todo el ancho disponible del contenedor */
+    box-sizing: border-box; /* Asegura que el ancho incluye el relleno y el borde */
+    height: 200% !important;
+}
+#score-task{
+    width: 25%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1 px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos de Notificaciones-Alex */
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.notification {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.notification h3 {
+    margin: 0;
+    color: black; /* Color de letra negro para los encabezados dentro de .notification */
+}
+
+.notification p {
+    margin: 0;
+    color: black; /* Color de letra negro para los párrafos dentro de .notification */
+}

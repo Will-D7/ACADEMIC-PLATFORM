@@ -1,0 +1,23 @@
+<div class="col-md-6 offset-md-3">
+    <div class="card-header">
+        <h2>Tareas Publicadas</h2>
+    </div>
+    <div class="card-body">
+        {{#if tasks}}
+        <ul class="list-group">
+            {{#each tasks}}
+            <li class="list-group-item d-flex justify-content-between align-item-center">
+                {{tituloTarea}}
+                <a href="" class="crear-tarea">
+                    Ver entregas
+                </a>
+            </li>
+            {{/each}}
+        </ul>
+        {{else}}
+        <p>No hay tareas publicadas</p>
+        {{/if}}
+    </div>
+</div>
+
+
