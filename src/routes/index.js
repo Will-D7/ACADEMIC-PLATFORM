@@ -8,11 +8,25 @@ admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
     databaseURL: 'https://task-acadplat-default-rtdb.firebaseio.com/'
 });
-router.post('/new-task');
+const db = admin.database();
 
 router.get('/',(req,res) =>{
     res.render('index');
 });
+
+router.post('/new-task',(req,res) =>{
+    const newTask = {
+        tituloTarea: req.body.tituloTarea,
+        desc: req.body.desc,
+        adjunto: req.body.adjunto,
+        deadline: req.body.deadline,
+        topics: req.body.topics,
+        score: req.body.score
+    };
+    db.ref('tasks').push(newTask);
+    res.redirect('tasks');
+});
+
 router.get('/login',(req,res) =>{
     res.render('login');
 });
@@ -23,7 +37,15 @@ router.get('/curso',(req,res) =>{
     res.render('curso');
 });
 router.get('/tasks',(req,res) =>{
-    res.render('tasks');
+    db.ref('tasks').once('value', (snapshot)=>{
+        const data = snapshot.val();
+        res.render('tasks',{tasks: data});
+    });
+    //res.render('tasks');
 })
+
+router.get('/notificaciones', (req,res) =>{
+    res.render('notificaciones');
+});
 
 module.exports = router;

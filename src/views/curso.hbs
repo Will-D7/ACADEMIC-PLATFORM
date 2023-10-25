@@ -5,28 +5,39 @@
         <button class="crear-tarea" id="show-form" >Crear Tarea</button>
     </div>
     <div class="hide-form" id="formm">
-        <form enctype="multipart/form-data" action="/new-task" method="POST">
-            <p>Nombre de la tarea nueva</p>
-            <input type="text" name="tituloTarea" placeholder="Titulo tarea" class="form-control" autofocus>
-            <p>Añada una descripcion de la tarea</p>
-            <textarea id="desc" name="desc" placeholder="De una descripcion breve de la tarea"></textarea>
-            <p></p>
-            <label for="adjunto">Adjuntar archivo:</label>
-            <input type="file" id="adjunto" name="adjunto">
-            <p></p>
-            <label for="deadline">Fecha limite de entrega:</label>
-            <input type="date" id="deadline" name="deadline">
-            <p></p>
-            <label for="topics">Asignar a tema</label>
-            <select name="topics" id="topics-scroll">
+        <form action="/new-task" method="POST">
+            <div>
+                <p>Nombre de la tarea nueva</p>
+                <input type="text" name="tituloTarea" placeholder="Titulo tarea" class="form-control" autofocus>
+            </div>
+            <div>
+                <p>Añada una descripcion de la tarea</p>
+                <textarea id="desc" name="desc" placeholder="De una descripcion breve de la tarea"></textarea>
+            </div>
+            <div>
+                <label for="adjunto">Adjuntar archivo:</label>
+                <input type="file" id="adjunto" name="adjunto">
+            </div>
+            <div>
+                <label for="deadline">Fecha limite de entrega:</label>
+                <input type="date" id="deadline" name="deadline">
+            </div>
+            <div>
+                <label for="topics">Asignar a tema</label>
+                <select name="topics" id="topics-scroll">
                 <option value="SIS INFO 2">SIS INFO 2</option>
-            </select>
-            <P></P>
-            <label for="score">Puntuación de la tarea:</label>
-            <input type="number" id="score-task" name="score" placeholder="Puntuación" autofocus>
+                </select>
+            </div>
+            <div>
+                <label for="score">Puntuación de la tarea:</label>
+                <input type="number" id="score-task" name="score" placeholder="Puntuación" autofocus>
+            </div>
+            <div>
+                <button class="crear-tarea" id="send-button"> Publicar tarea</button>
+            </div>
             
         </form>
-        <button class="crear-tarea" id="send-button"> Publicar tarea</button>
+        <!-- <button class="crear-tarea" id="send-button"> Publicar tarea</button> -->
         <p></p>
         <!-- <button type="submit">Publicar Tarea</button> -->
     </div>
