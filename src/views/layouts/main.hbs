@@ -2,18 +2,58 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" constent="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Academic</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/darkly/bootstrap.min.css">
         <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cyborg/bootstrap.min.css">
+        <script src="https://cdn.tiny.cloud/1/3rq975v1hd54h191selb9p05rk5hzoy93wimpibe6ucty7y8/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
     </head>
 
-    <body>
-        <div class="container p-4">
+    <body class="image-background">
+                <div class="container p-4">
+                    <div class="navbar">
+                <div class="dropdown cursos">
+                    <button class="dropbtn">Menú</button>
+                    <div class="dropdown-content cursos-content">
+                        <a href="/">Inicio</a>
+                        <a href="/tasks">Tareas</a>
+                        <a href="/calendar">Calendario</a>
+                        <a href="/evaluations">Evaluaciones</a>
+                    </div>
+                </div>
+                <div class="dropdown usuario">
+                    <button class="user-name">Usuario</button>
+                    <div class="dropdown-content usuario-content">
+                        <a href="/login">Iniciar Sesión</a>
+                        <a href="/register">Registrarse</a> 
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h1>AcadMyPlatform</h1>
+                </div>
+                <div class="card-footer-curso">
+                    <div class="card-curso">
+                        <a href="#curso">Avisos</a>
+                        <a href="tasks">Tareas</a>
+                        <a href="#temas">Temario</a>
+                        <a href="#calendario">Calendario</a>
+                        <a href="notificaciones">Notificaciones</a>
+                        <a href="evaluaciones">Evaluaciones</a>
+                    </div>
+        
+                </div>
+            
             <div class="row">
                 {{{body}}}
             </div>
         </div>
+        
+        <script src="evaluations.js"></script>
+
     </body>
 </html>

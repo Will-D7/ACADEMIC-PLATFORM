@@ -1,0 +1,60 @@
+<div class="container my-5">
+    <h2 class="mb-4">Crear Evaluación</h2>
+
+    <div class="card">
+        <div class="card-body">
+            <form id="evaluationForm" action="/new-evaluation" method="POST">
+
+                <div class="mb-3">
+                    <label for="evalName" class="form-label">Nombre de la Evaluación:</label>
+                    <input type="text" class="form-control" id="evalName" name="evalName" required class="form-control" autofocus>
+                </div>
+
+                <div class="mb-3">
+                    <label for="duration" class="form-label">Duración (en minutos):</label>
+                    <input type="number" class="form-control" id="duration" name="duration" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="questionType" class="form-label">Tipo de Pregunta:</label>
+                    <select class="form-select" id="questionType" name="questionType">
+                        <option value="multipleChoice">Opción Múltiple</option>
+                        <option value="shortAnswer">Respuesta Corta</option>
+                        <option value="longAnswer">Respuesta Larga</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <button type="button" class="btn btn-primary" onclick="addQuestion()">Añadir Pregunta</button>
+                </div>
+
+                <div id="questionContainer" class="mb-3">
+                </div>
+
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-success">Guardar Evaluación</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Aquí irá la lista de evaluaciones creadas -->
+    <div class="mt-5">
+        <p class="viewEvaluations">Evaluaciones creadas:</p>
+        {{#if evaluations}}
+            <ul>
+                {{#each evaluations}}
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Datos de Evaluacion: {{evalName}}  | 
+                    Tiempo: {{duration}} minutos  | 
+                    {{questionType}}
+                    <a href="/delete-evaluation/{{@key}}" class="btn btn-danger">Delete</a>
+                </li>
+                {{/each}}
+            </ul>
+        {{else}}
+        <p class="notEvaluations">No hay evaluaciones.</p>
+        {{/if}}
+    </div>
+</div>
